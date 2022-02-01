@@ -1,0 +1,393 @@
+/* Variables */
+
+$color-one: #ffffff;
+$color-two: #FED136;
+$color-three: #808080;
+$color-four: #F7F7F7;
+$color-five: #000000;
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Oxygen', sans-serif;
+    background-color: inherit;
+    text-align: center;
+}
+
+/* Header */
+
+header,
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: inherit;
+}
+
+header {
+    height: 699px;
+    width: 1400px;
+    background-image: url(https://i.postimg.cc/52KYR8bW/pexels-sheep-1846422.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+header,
+.box-menu a {
+    color: $color-one;
+    text-decoration: none;
+}
+
+.flexbox-nav {
+    display: flex;
+}
+
+.box-menu {
+    flex: 70%;
+    padding-right: 220px;
+}
+
+.box-logo {
+    flex: 30%;
+    color: $color-two;    
+    padding-top: 31px;
+    padding-left: 100px;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 29px;
+    font-style: italic;
+}
+
+header ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding-top: 48px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 36px 0 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 180px;
+    font-size: 39px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+header h2 {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    font-size: 71px;
+    font-weight: bold;
+}
+
+.button {
+    text-align: center;
+    padding-top: 27px;  
+}
+
+.btn {
+    display: inline-block;
+    min-width: 208px;
+    min-height: 34px;
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 0px;
+    border-style: solid;
+    background-color: $color-two;
+    color: $color-one;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* Servieces */
+
+.flexbox-service {
+    display: flex;
+    justify-content: center;
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-top: 76px;
+}
+
+.box-service {
+    flex: 0 0 33.333%;
+    padding: 0px 3px 0px 7px;    
+    text-align: center;
+}
+
+.box-service i {
+    font-size: 35px;
+    border-style: solid;
+    border-radius: 50%;
+    min-width: 65px;
+    min-height: 50px;
+    padding-top: 15px;
+    color: $color-two;
+}
+.services-title {
+    text-align: center;
+    margin-top: 115px;
+    line-height: 1;
+}
+
+.services-title h2 {
+    font-size: 39px;
+    margin-bottom: 0;   
+}
+
+.services-title h3 {
+    margin-top: 15px;    
+    padding-bottom: 4px;;
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    color: $color-three;
+}
+
+.services .box-service h2 {
+    margin-top: 19px;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.services .box-service p {
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Portfolio */
+
+.portfolio {
+    margin-top: 102px;
+}
+
+.portfolio .container {
+    background-color: $color-four;
+    height: 1218px;
+}
+
+.portfolio .title h2 {
+    text-align: center;
+    line-height: 1;
+    font-size: 39px;
+    padding-top: 114px;
+    margin-top: 57px;
+    margin-bottom: 9px;
+}
+
+.portfolio .title h3 {
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0;
+    font-size: 16px;
+    color: $color-three;    
+}
+
+.flexbox-portfolio {
+    padding-left: 230px;
+    padding-right: 230px;
+    margin-top: 76px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+
+.portfolio .box-portfolio {
+    flex: 0 0 33.333%; 
+    text-align: center;
+    padding: 0;
+    height: 391px;
+    max-width: 289px;
+    margin-right: 6px;
+    margin-bottom: 52px;
+    justify-content: space-between;
+    background-color: $color-one;
+}
+
+.portfolio .box-portfolio img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-portfolio h2 {
+    padding: 3px;
+    margin: 0;
+    font-size: 19px;
+    margin-top: 13px;
+    line-height: 1;
+}
+
+.portfolio .box-portfolio h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* Footer */
+
+.page-footer p {
+    float: left;
+    font-size: 14px;
+    padding-left: 210px;
+    padding-top: 33px;
+    position: relative;
+    bottom: 102px;
+}
+
+.page-footer ul {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    padding-bottom: 23px;
+    padding-top: 29px;
+    padding-left: 0px;
+}
+
+.page-footer i {
+    font-size: 20px;
+    color: $color-one;
+    background-color: $color-five;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: 1s;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+.page-footer li {
+    display: inline-block;
+    text-decoration: none; 
+}
+
+.page-footer i:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+
+    header {
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    .container {
+        padding: 0px;
+        max-width: 100%;
+    }
+    
+    header .box-logo {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    header .box-menu {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;        
+    }
+
+    .box-menu a {
+        font-size: 12px;
+    }
+
+    header ul {
+        float: none;
+    }
+
+    header .splash h1 {
+        font-size: 24px;
+        padding-top: 100px;
+    }
+
+    header .splash h2 {
+        font-size: 30px;
+    }
+
+    .splash h2,
+    .services h2,
+    .portfolio h2 {
+        font-size: 34px;
+    }
+
+    .splash .button {
+        padding-top: 65px;
+    }
+
+    .splash .btn {
+        display: inline;
+    }
+
+    .flexbox-service,
+    .flexbox-portfolio,
+    .flexbox-nav {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .services .box-service {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .portfolio .box-portfolio {
+        max-width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .portfolio .container {
+        height: 2800px;
+    }
+
+    .portfolio .title h2 {
+        font-size: 34px;
+    }
+
+    .page-footer p {
+        text-align: center;
+        left: 0;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        float: none;
+    }
+    
+    .page-footer ul {
+        float: none;
+        padding-left: 0px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .page-footer p {
+        position: relative;
+        bottom: 0;
+    }
+}

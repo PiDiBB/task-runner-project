@@ -1,0 +1,29 @@
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.navigation {
+    padding-top: 50px;
+    padding-left: 220px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    position: relative;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}

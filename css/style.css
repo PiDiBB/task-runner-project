@@ -1,0 +1,386 @@
+/* Variables */
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Oxygen", sans-serif;
+  background-color: inherit;
+  text-align: center;
+}
+
+/* Header */
+header,
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: inherit;
+}
+
+header {
+  height: 699px;
+  width: 1400px;
+  background-image: url(https://i.postimg.cc/52KYR8bW/pexels-sheep-1846422.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+header,
+.box-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.flexbox-nav {
+  display: flex;
+}
+
+.box-menu {
+  flex: 70%;
+  padding-right: 220px;
+}
+
+.box-logo {
+  flex: 30%;
+  color: #FED136;
+  padding-top: 31px;
+  padding-left: 100px;
+  font-family: "Grand Hotel", cursive;
+  font-size: 29px;
+  font-style: italic;
+}
+
+header ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding-top: 48px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 36px 0 0;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  padding-top: 180px;
+  font-size: 39px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+header h2 {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  font-size: 71px;
+  font-weight: bold;
+}
+
+.button {
+  text-align: center;
+  padding-top: 27px;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 208px;
+  min-height: 34px;
+  padding: 16px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 0px;
+  border-style: solid;
+  background-color: #FED136;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* Servieces */
+.flexbox-service {
+  display: flex;
+  justify-content: center;
+  padding-left: 220px;
+  padding-right: 220px;
+  margin-top: 76px;
+}
+
+.box-service {
+  flex: 0 0 33.333%;
+  padding: 0px 3px 0px 7px;
+  text-align: center;
+}
+
+.box-service i {
+  font-size: 35px;
+  border-style: solid;
+  border-radius: 50%;
+  min-width: 65px;
+  min-height: 50px;
+  padding-top: 15px;
+  color: #FED136;
+}
+
+.services-title {
+  text-align: center;
+  margin-top: 115px;
+  line-height: 1;
+}
+
+.services-title h2 {
+  font-size: 39px;
+  margin-bottom: 0;
+}
+
+.services-title h3 {
+  margin-top: 15px;
+  padding-bottom: 4px;
+  font-size: 16px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #808080;
+}
+
+.services .box-service h2 {
+  margin-top: 19px;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.services .box-service p {
+  margin-top: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Portfolio */
+.portfolio {
+  margin-top: 102px;
+}
+
+.portfolio .container {
+  background-color: #F7F7F7;
+  height: 1218px;
+}
+
+.portfolio .title h2 {
+  text-align: center;
+  line-height: 1;
+  font-size: 39px;
+  padding-top: 114px;
+  margin-top: 57px;
+  margin-bottom: 9px;
+}
+
+.portfolio .title h3 {
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 0;
+  font-size: 16px;
+  color: #808080;
+}
+
+.flexbox-portfolio {
+  padding-left: 230px;
+  padding-right: 230px;
+  margin-top: 76px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.portfolio .box-portfolio {
+  flex: 0 0 33.333%;
+  text-align: center;
+  padding: 0;
+  height: 391px;
+  max-width: 289px;
+  margin-right: 6px;
+  margin-bottom: 52px;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.portfolio .box-portfolio img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio .box-portfolio h2 {
+  padding: 3px;
+  margin: 0;
+  font-size: 19px;
+  margin-top: 13px;
+  line-height: 1;
+}
+
+.portfolio .box-portfolio h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* Footer */
+.page-footer p {
+  float: left;
+  font-size: 14px;
+  padding-left: 210px;
+  padding-top: 33px;
+  position: relative;
+  bottom: 102px;
+}
+
+.page-footer ul {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  padding-bottom: 23px;
+  padding-top: 29px;
+  padding-left: 0px;
+}
+
+.page-footer i {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  transition: 1s;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 2px;
+}
+
+.page-footer li {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.page-footer i:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  header {
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  .container {
+    padding: 0px;
+    max-width: 100%;
+  }
+
+  header .box-logo {
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  header .box-menu {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .box-menu a {
+    font-size: 12px;
+  }
+
+  header ul {
+    float: none;
+  }
+
+  header .splash h1 {
+    font-size: 24px;
+    padding-top: 100px;
+  }
+
+  header .splash h2 {
+    font-size: 30px;
+  }
+
+  .splash h2,
+.services h2,
+.portfolio h2 {
+    font-size: 34px;
+  }
+
+  .splash .button {
+    padding-top: 65px;
+  }
+
+  .splash .btn {
+    display: inline;
+  }
+
+  .flexbox-service,
+.flexbox-portfolio,
+.flexbox-nav {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .services .box-service {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .portfolio .box-portfolio {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .portfolio .container {
+    height: 2800px;
+  }
+
+  .portfolio .title h2 {
+    font-size: 34px;
+  }
+
+  .page-footer p {
+    text-align: center;
+    left: 0;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    float: none;
+  }
+
+  .page-footer ul {
+    float: none;
+    padding-left: 0px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .page-footer p {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBUUE7RUFDSSxTQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsaUNBQUE7RUFDQSx5QkFBQTtFQUNBLGtCQUFBO0FDTko7O0FEU0EsV0FBQTtBQUVBOztFQUVJLGFBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7QUNQSjs7QURVQTtFQUNJLGFBQUE7RUFDQSxhQUFBO0VBQ0EsNkVBQUE7RUFDQSxrQ0FBQTtFQUNBLHNCQUFBO0FDUEo7O0FEVUE7O0VBRUksY0FsQ1E7RUFtQ1IscUJBQUE7QUNQSjs7QURVQTtFQUNJLGFBQUE7QUNQSjs7QURVQTtFQUNJLFNBQUE7RUFDQSxvQkFBQTtBQ1BKOztBRFVBO0VBQ0ksU0FBQTtFQUNBLGNBaERRO0VBaURSLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQ0FBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtBQ1BKOztBRFVBO0VBQ0ksWUFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0VBQ0EsZ0JBQUE7RUFDQSxxQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7QUNQSjs7QURVQTtFQUNJLHFCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtBQ1BKOztBRFVBO0VBQ0ksU0FBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxvQkFBQTtBQ1BKOztBRFVBO0VBQ0ksU0FBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7QUNQSjs7QURVQTtFQUNJLGtCQUFBO0VBQ0EsaUJBQUE7QUNQSjs7QURVQTtFQUNJLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQTNHUTtFQTRHUixjQTdHUTtFQThHUixpQkFBQTtFQUNBLGVBQUE7QUNQSjs7QURVQSxjQUFBO0FBRUE7RUFDSSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0EsZ0JBQUE7QUNSSjs7QURXQTtFQUNJLGlCQUFBO0VBQ0Esd0JBQUE7RUFDQSxrQkFBQTtBQ1JKOztBRFdBO0VBQ0ksZUFBQTtFQUNBLG1CQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLGNBeElRO0FDZ0laOztBRFVBO0VBQ0ksa0JBQUE7RUFDQSxpQkFBQTtFQUNBLGNBQUE7QUNQSjs7QURVQTtFQUNJLGVBQUE7RUFDQSxnQkFBQTtBQ1BKOztBRFVBO0VBQ0ksZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsY0ExSlU7QUNtSmQ7O0FEVUE7RUFDSSxnQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQ1BKOztBRFVBO0VBQ0ksZUFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQ1BKOztBRFVBLGNBQUE7QUFFQTtFQUNJLGlCQUFBO0FDUko7O0FEV0E7RUFDSSx5QkEvS1M7RUFnTFQsY0FBQTtBQ1JKOztBRFdBO0VBQ0ksa0JBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtBQ1JKOztBRFdBO0VBQ0ksa0JBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSxjQW5NVTtBQzJMZDs7QURXQTtFQUNJLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSw4QkFBQTtFQUNBLGdCQUFBO0FDUko7O0FEV0E7RUFDSSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLGFBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSw4QkFBQTtFQUNBLHlCQTVOUTtBQ29OWjs7QURXQTtFQUNJLGFBQUE7RUFDQSxXQUFBO0VBQ0Esb0JBQUE7S0FBQSxpQkFBQTtBQ1JKOztBRFdBO0VBQ0ksWUFBQTtFQUNBLFNBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0FDUko7O0FEV0E7RUFDSSxVQUFBO0VBQ0EsU0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7QUNSSjs7QURXQSxXQUFBO0FBRUE7RUFDSSxXQUFBO0VBQ0EsZUFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLGFBQUE7QUNUSjs7QURZQTtFQUNJLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLGtCQUFBO0VBQ0Esb0JBQUE7RUFDQSxpQkFBQTtFQUNBLGlCQUFBO0FDVEo7O0FEWUE7RUFDSSxlQUFBO0VBQ0EsY0E1UVE7RUE2UVIseUJBelFTO0VBMFFULFdBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtBQ1RKOztBRFlBO0VBQ0kscUJBQUE7RUFDQSxxQkFBQTtBQ1RKOztBRFlBO0VBQ0kscUJBQUE7QUNUSjs7QURZQTtFQUVJO0lBQ0ksZUFBQTtJQUNBLFlBQUE7RUNWTjs7RURhRTtJQUNJLFlBQUE7SUFDQSxlQUFBO0VDVk47O0VEYUU7SUFDSSxrQkFBQTtJQUNBLGlCQUFBO0VDVk47O0VEYUU7SUFDSSxrQkFBQTtJQUNBLG1CQUFBO0lBQ0EsZ0JBQUE7RUNWTjs7RURhRTtJQUNJLGVBQUE7RUNWTjs7RURhRTtJQUNJLFdBQUE7RUNWTjs7RURhRTtJQUNJLGVBQUE7SUFDQSxrQkFBQTtFQ1ZOOztFRGFFO0lBQ0ksZUFBQTtFQ1ZOOztFRGFFOzs7SUFHSSxlQUFBO0VDVk47O0VEYUU7SUFDSSxpQkFBQTtFQ1ZOOztFRGFFO0lBQ0ksZUFBQTtFQ1ZOOztFRGFFOzs7SUFHSSxzQkFBQTtJQUNBLFlBQUE7RUNWTjs7RURhRTtJQUNJLGtCQUFBO0lBQ0EsbUJBQUE7RUNWTjs7RURhRTtJQUNJLGVBQUE7SUFDQSxnQkFBQTtJQUNBLGlCQUFBO0VDVk47O0VEWUU7SUFDSSxjQUFBO0VDVE47O0VEWUU7SUFDSSxlQUFBO0VDVE47O0VEWUU7SUFDSSxrQkFBQTtJQUNBLE9BQUE7SUFDQSxpQkFBQTtJQUNBLGdCQUFBO0lBQ0Esb0JBQUE7SUFDQSxXQUFBO0VDVE47O0VEWUU7SUFDSSxXQUFBO0lBQ0EsaUJBQUE7SUFDQSxrQkFBQTtJQUNBLGlCQUFBO0lBQ0Esb0JBQUE7RUNUTjs7RURZRTtJQUNJLGtCQUFBO0lBQ0EsU0FBQTtFQ1ROO0FBQ0YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
