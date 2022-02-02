@@ -67,6 +67,7 @@ header ul {
     padding-top: 48px;
     font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 header li {
@@ -76,6 +77,7 @@ header li {
 }
 
 header h1 {
+    text-transform: capitalize;
     margin: 0;
     text-align: center;
     padding-top: 180px;
@@ -85,6 +87,7 @@ header h1 {
 }
 
 header h2 {
+    text-transform: uppercase;
     margin: 0;
     text-align: center;
     position: relative;
@@ -93,6 +96,7 @@ header h2 {
 }
 
 .button {
+    text-transform: uppercase;
     text-align: center;
     padding-top: 27px;  
 }
@@ -146,6 +150,7 @@ header h2 {
 }
 
 .services-title h2 {
+    text-transform: uppercase;
     font-size: 39px;
     margin-bottom: 0;   
 }
@@ -159,7 +164,8 @@ header h2 {
     color: $color-three;
 }
 
-.services .box-service h2 {
+.services .box-service h3 {
+    text-transform: capitalize;
     margin-top: 19px;
     font-size: 17px;
     margin-bottom: 0;
@@ -183,6 +189,7 @@ header h2 {
 }
 
 .portfolio .title h2 {
+    text-transform: uppercase;
     text-align: center;
     line-height: 1;
     font-size: 39px;
@@ -213,6 +220,7 @@ header h2 {
 
 .portfolio .box-portfolio {
     flex: 0 0 33.333%; 
+    text-transform: capitalize;
     text-align: center;
     padding: 0;
     height: 391px;
@@ -229,7 +237,7 @@ header h2 {
     object-fit: cover;
 }
 
-.portfolio .box-portfolio h2 {
+.portfolio .box-portfolio h3 {
     padding: 3px;
     margin: 0;
     font-size: 19px;
@@ -237,13 +245,14 @@ header h2 {
     line-height: 1;
 }
 
-.portfolio .box-portfolio h3 {
+.portfolio .box-portfolio h4 {
     padding: 0;
     margin: 0;
     font-size: 15px;
     line-height: 1.5;
     font-style: italic;
     font-weight: 100;
+    color: $color-three;
 }
 
 /* Footer */
@@ -360,9 +369,10 @@ header h2 {
         max-width: 100%;
         margin-left: 0px;
         margin-right: 0px;
+        padding-bottom: 20px;
     }
     .portfolio .container {
-        height: 2800px;
+        height: 2900px;
     }
 
     .portfolio .title h2 {
