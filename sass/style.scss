@@ -17,19 +17,19 @@ body {
 
 /* Header */
 
-header,
-.container {
-    width: 1400px;
+header {
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/VLkw74gt/pexels-tim-durben-841369.jpg);
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
     margin: 0 auto;
     background-color: inherit;
 }
 
-header {
-    height: 699px;
-    width: 1400px;
-    background-image: url(https://i.postimg.cc/52KYR8bW/pexels-sheep-1846422.jpg);
-    background-position: center center;
-    background-size: cover;
+.container {
+    max-width: 960px;
+    margin: 0 auto; 
 }
 
 header,
@@ -44,16 +44,16 @@ header,
 
 .box-menu {
     flex: 70%;
-    padding-right: 220px;
 }
 
 .box-logo {
     flex: 30%;
     color: $color-two;    
-    padding-top: 31px;
-    padding-left: 100px;
-    font-family: 'Grand Hotel', cursive;
-    font-size: 29px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 28px;
     font-style: italic;
 }
 
@@ -72,7 +72,7 @@ header ul {
 
 header li {
     display: inline-block;
-    margin: 0 36px 0 0;
+    padding-right: 30px;
     position: relative;
 }
 
@@ -80,7 +80,7 @@ header h1 {
     text-transform: capitalize;
     margin: 0;
     text-align: center;
-    padding-top: 180px;
+    padding-top: 150px;
     font-size: 39px;
     font-style: italic;
     font-weight: lighter;
@@ -98,14 +98,14 @@ header h2 {
 .button {
     text-transform: uppercase;
     text-align: center;
-    padding-top: 27px;  
+    padding-top: 30px;  
 }
 
 .btn {
     display: inline-block;
-    min-width: 208px;
-    min-height: 34px;
-    padding: 16px;
+    min-width: 200px;
+    min-height: 35px;
+    padding: 15px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
@@ -120,17 +120,20 @@ header h2 {
 
 /* Servieces */
 
+.services {
+    max-width: 100%;
+}
+
 .flexbox-service {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-left: 220px;
-    padding-right: 220px;
-    margin-top: 76px;
+    margin-top: 75px;
 }
 
 .box-service {
-    flex: 0 0 33.333%;
-    padding: 0px 3px 0px 7px;    
+    flex: 0 0 33.333%;     
     text-align: center;
 }
 
@@ -157,7 +160,7 @@ header h2 {
 
 .services-title h3 {
     margin-top: 15px;    
-    padding-bottom: 4px;;
+    padding-bottom: 5px;;
     font-size: 16px;
     font-weight: lighter;
     font-style: italic;
@@ -166,13 +169,14 @@ header h2 {
 
 .services .box-service h3 {
     text-transform: capitalize;
-    margin-top: 19px;
+    margin-top: 20px;
     font-size: 17px;
     margin-bottom: 0;
 }
 
 .services .box-service p {
-    margin-top: 7px;
+    padding: 15px;
+    margin: 0px;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -180,12 +184,14 @@ header h2 {
 /* Portfolio */
 
 .portfolio {
-    margin-top: 102px;
+    max-width: 100%;
+    background-color: $color-four;
+    margin-top: 100px;
 }
 
 .portfolio .container {
-    background-color: $color-four;
-    height: 1218px;
+    max-height: 100%;
+    padding-bottom: 30px;
 }
 
 .portfolio .title h2 {
@@ -208,8 +214,7 @@ header h2 {
 }
 
 .flexbox-portfolio {
-    padding-left: 230px;
-    padding-right: 230px;
+
     margin-top: 76px;
     display: flex;
     flex-direction: row;
@@ -223,10 +228,9 @@ header h2 {
     text-transform: capitalize;
     text-align: center;
     padding: 0;
-    height: 391px;
-    max-width: 289px;
-    margin-right: 6px;
-    margin-bottom: 52px;
+    height: 390px;
+    max-width: 300px;
+    margin-bottom: 50px;
     justify-content: space-between;
     background-color: $color-one;
 }
@@ -238,10 +242,10 @@ header h2 {
 }
 
 .portfolio .box-portfolio h3 {
-    padding: 3px;
+    padding-top: 15px;
+    padding-bottom: 5px;
     margin: 0;
     font-size: 19px;
-    margin-top: 13px;
     line-height: 1;
 }
 
@@ -260,7 +264,6 @@ header h2 {
 .page-footer p {
     float: left;
     font-size: 14px;
-    padding-left: 210px;
     padding-top: 33px;
     position: relative;
     bottom: 102px;
@@ -270,9 +273,13 @@ header h2 {
     text-align: center;
     margin: 0;
     position: relative;
-    padding-bottom: 23px;
-    padding-top: 29px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     padding-left: 0px;
+
+    a {
+        font-size: 0px;
+    }
 }
 
 .page-footer i {
@@ -301,25 +308,19 @@ header h2 {
 
 @media (max-width: 768px) {
 
-    header {
-        max-width: 100%;
-        padding: 0px;
-    }
-
+    header,
     .container {
-        padding: 0px;
         max-width: 100%;
+        padding: 0px;
     }
-    
+  
     header .box-logo {
         text-align: center;
-        padding-left: 0px;
     }
 
     header .box-menu {
         padding-left: 20px;
-        padding-right: 20px;
-        text-align: left;        
+        text-align: center;        
     }
 
     .box-menu a {
@@ -372,7 +373,7 @@ header h2 {
         padding-bottom: 20px;
     }
     .portfolio .container {
-        height: 2900px;
+        max-height: 100%;
     }
 
     .portfolio .title h2 {
@@ -400,4 +401,29 @@ header h2 {
         position: relative;
         bottom: 0;
     }
+}
+
+@media (max-width: 960px) {
+
+    header,
+    .container {
+        max-width: 100%;
+    }
+
+
+
+    .flexbox-service,
+    .flexbox-portfolio,
+    .flexbox-nav {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .portfolio .box-portfolio {
+        max-width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 20px;
+    }
+
 }
