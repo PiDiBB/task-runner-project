@@ -1,25 +1,26 @@
 /* Variables */
 
 $color-one: #ffffff;
-$color-two: #FED136;
+$color-two: black;
 $color-three: #808080;
 $color-four: #F7F7F7;
 $color-five: #000000;
+$color-six: #1A1A1A;
 
 body {
     margin: 0;
     font-size: 16px;
     line-height: 1.7;
-    font-family: 'Oxygen', sans-serif;
     background-color: inherit;
     text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* Header */
 
 header {
     height: 100vh;
-    background-image: url(https://i.postimg.cc/VLkw74gt/pexels-tim-durben-841369.jpg);
+    background-image: url(https://i.postimg.cc/pV9rCXj7/pexels-adrien-olichon-2387532.jpg);
     background-position: center center;
     background-size: cover;
     max-width: 100%;
@@ -32,10 +33,16 @@ header {
     margin: 0 auto; 
 }
 
-header,
+header {
+    color: $color-one;
+    text-decoration: none;
+    
+}
+
 .box-menu a {
     color: $color-one;
     text-decoration: none;
+    font-weight: lighter;
 }
 
 .flexbox-nav {
@@ -48,13 +55,14 @@ header,
 
 .box-logo {
     flex: 30%;
-    color: $color-two;    
+    color: $color-one;    
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
     text-align: left;
     font-size: 28px;
-    font-style: italic;
+    
+    
 }
 
 header ul {
@@ -84,6 +92,7 @@ header h1 {
     font-size: 39px;
     font-style: italic;
     font-weight: lighter;
+    
 }
 
 header h2 {
@@ -93,35 +102,40 @@ header h2 {
     position: relative;
     font-size: 71px;
     font-weight: bold;
+    
 }
 
 .button {
     text-transform: uppercase;
     text-align: center;
     padding-top: 30px;  
+    
+
 }
 
 .btn {
     display: inline-block;
     min-width: 200px;
     min-height: 35px;
-    padding: 15px;
+    padding: 5px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border-width: 0px;
+    border-width: 1px;
     border-style: solid;
-    background-color: $color-two;
+    background-color: $color-six;
     color: $color-one;
     font-weight: bold;
     font-size: 19px;
+    font-weight: lighter;
 }
 
 /* Servieces */
 
 .services {
     max-width: 100%;
+    height: 550px;
 }
 
 .flexbox-service {
@@ -129,7 +143,8 @@ header h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 60px;
+    padding-bottom: 30px;
 }
 
 .box-service {
@@ -144,18 +159,18 @@ header h2 {
     min-width: 65px;
     min-height: 50px;
     padding-top: 15px;
-    color: $color-two;
+    color: $color-six;
 }
 .services-title {
     text-align: center;
-    margin-top: 115px;
-    line-height: 1;
+    padding-top: 30px;
 }
 
 .services-title h2 {
-    text-transform: uppercase;
-    font-size: 39px;
-    margin-bottom: 0;   
+    font-weight: 500;
+    font-size: 40px;
+    color: $color-six;
+     
 }
 
 .services-title h3 {
@@ -164,7 +179,7 @@ header h2 {
     font-size: 16px;
     font-weight: lighter;
     font-style: italic;
-    color: $color-three;
+    color: $color-six;
 }
 
 .services .box-service h3 {
@@ -184,50 +199,46 @@ header h2 {
 /* Portfolio */
 
 .portfolio {
+    
     max-width: 100%;
     background-color: $color-four;
-    margin-top: 100px;
 }
 
 .portfolio .container {
+    height: 110vh;
     max-height: 100%;
-    padding-bottom: 30px;
 }
 
 .portfolio .title h2 {
-    text-transform: uppercase;
+    font-weight: 500;
     text-align: center;
     line-height: 1;
-    font-size: 39px;
-    padding-top: 114px;
-    margin-top: 57px;
-    margin-bottom: 9px;
+    font-size: 40px;
+    padding-top: 90px;
+    
 }
 
 .portfolio .title h3 {
     font-style: italic;
     font-weight: lighter;
     text-align: center;
-    margin-top: 0;
     font-size: 16px;
     color: $color-three;    
 }
 
 .flexbox-portfolio {
-
-    margin-top: 76px;
+    padding-top: 125px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 72px;
+    padding-bottom: 110px;
 }
 
 .portfolio .box-portfolio {
     flex: 0 0 33.333%; 
-    text-transform: capitalize;
+    font-weight: 500;
     text-align: center;
-    padding: 0;
     height: 390px;
     max-width: 300px;
     margin-bottom: 50px;
@@ -242,24 +253,48 @@ header h2 {
 }
 
 .portfolio .box-portfolio h3 {
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 5px;
-    margin: 0;
     font-size: 19px;
     line-height: 1;
+    font-weight: normal;
+    color: $color-five;
+   
 }
 
-.portfolio .box-portfolio h4 {
-    padding: 0;
+
+/* Contact */
+
+.contact {
+    height: 420px;
+}
+
+ 
+
+.contact h2 {
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 60px;
     margin: 0;
-    font-size: 15px;
-    line-height: 1.5;
-    font-style: italic;
-    font-weight: 100;
-    color: $color-three;
+}
+
+.contact a {
+    font-size: 16px;
+    font-weight: 400;
+    color:$color-five;
+    text-decoration: none;
+}
+
+.contact .flexbox .btn-one {
+    margin-bottom: 14px;   
 }
 
 /* Footer */
+
+.page-footer {
+    border-top: groove;
+}
 
 .page-footer p {
     float: left;
@@ -267,6 +302,7 @@ header h2 {
     padding-top: 33px;
     position: relative;
     bottom: 102px;
+    
 }
 
 .page-footer ul {
@@ -285,7 +321,7 @@ header h2 {
 .page-footer i {
     font-size: 20px;
     color: $color-one;
-    background-color: $color-five;
+    background-color: $color-six;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -378,6 +414,7 @@ header h2 {
 
     .portfolio .title h2 {
         font-size: 34px;
+        padding-top: 90px;
     }
 
     .page-footer p {
@@ -387,6 +424,7 @@ header h2 {
         padding-top: 0px;
         padding-bottom: 10px;
         float: none;
+        position: relative;
     }
     
     .page-footer ul {
@@ -414,7 +452,8 @@ header h2 {
 
     .flexbox-service,
     .flexbox-portfolio,
-    .flexbox-nav {
+    .flexbox-nav,
+    .contact-flexbox {
         flex-direction: column;
         padding: 0px;
     }
